@@ -1,6 +1,7 @@
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-% Problem 8.2: Program to find length of springs at mechanical            %         
-% equlilbrium by solving system of linear equations using linsolve        %                                                                                
+% Program to find length of springs of coupled harmonic oscillator at     %
+% mechanical equlilbrium by solving system of linear equations using the  %
+% linsolve function.                                                      %                                                                                      
 %                                                                         %
 % Programmed by Anthony Knighton on 2/24/2021                             %
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
