@@ -1,6 +1,7 @@
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % Program to find energy eigenvalue and eigenfunction of quantum harmonic %
-% oscillator using Numerov with bisection root finding method.            %                                                           
+% oscillator using Numerov with bisection root finding method. User       %
+% inputs initial upper and lower energy brackets.                         %                                                          
 %                                                                         %
 % Programmed by Anthony Knighton on 2/26/2021                             %
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
