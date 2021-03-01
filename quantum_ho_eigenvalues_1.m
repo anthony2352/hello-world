@@ -15,7 +15,7 @@ xmax=5;
 tollerance = 1e-8;
 h = 0.001;
 % Initial Lower bound
-[x,psi] = qmho_numerov(E(1),xmax,h);
+[x,psi] = quantum_ho_numerov(E(1),xmax,h);
 N=size(x,2);
 error_L=(psi(N)-psi(N-1))/(x(N)-x(N-1));
 error_L2=psi(N);
@@ -30,7 +30,7 @@ elseif abs(error_L2) < tollerance
 end
 % Initial Upper bound
 if not(found)
-   [x,psi] = qmho_numerov(E(2),xmax,h);
+   [x,psi] = quantum_ho_numerov(E(2),xmax,h);
    error_U=(psi(N)-psi(N-1))/(x(N)-x(N-1));
    error_U2=psi(N);
    if abs(error_U) < tollerance
@@ -58,7 +58,7 @@ end
 % Bisection Method
 while not(found)
     EM = sum(E)*0.5;
-    [x,psi] = qmho_numerov(EM,xmax,h);
+    [x,psi] = quantum_ho_numerov(EM,xmax,h);
     if symmetric
         error_M=(psi(N)-psi(N-1))/(x(N)-x(N-1));
     else
